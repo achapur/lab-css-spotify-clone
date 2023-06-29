@@ -49,8 +49,8 @@
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
-      color: white;
-      font-size: 24px;
+      color: #FFF;
+      font-size: 50px;
       font-weight: bold;
     }
 
@@ -59,8 +59,8 @@
       top: 60%;
       left: 50%;
       transform: translate(-50%, -50%);
-      color: white;
-      font-size: 10px;
+      color: #FFF;
+      font-size: 20px;
       font-weight: bold;
     }
 
@@ -91,11 +91,96 @@
     align-items: center;
     padding: 20px;
   }
+
+  .minititle {
+    font-size: 20px;
+    font-weight: bold;
+    color: #00B172;
+  }
   .millions-container > div,
   .hd-container > div,
   .stream-container > div {
     margin-bottom: 10px;
   }
+
+  
+  .icons {
+    width: 30%;
+    height: 30%;
+  }
+
+  .minip {
+   display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    font-size: 15px;
+    color: #1A1A1A;
+  }
+
+  .third-section {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start; /* Changed from "left" to "flex-start" */
+  color: #FFF;
+  background-color: #00B172;
+  size: 100%;
+  padding-top: 120px;
+  padding-right: 40px;
+}
+
+.content-section {
+  flex: 1;
+}
+
+
+
+.maintitle {
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: underline;
+  margin: 40px;
+}
+
+.thirdtitle {
+  font-size: 20px;
+  font-weight: bold;
+  padding-left: 40px;
+  padding-bottom: 10px;
+}
+
+.thirdp {
+  font-size: 15px;
+  margin-bottom: 20px;
+  margin-left: 40px;
+  padding-bottom: 10px;
+  
+}
+
+.spotify-app {
+  margin-left: auto; /* Add this property to push it to the right */
+  align-self: flex-end; /* Add this property to push it to the right */
+  max-width: 100%;
+  max-height: 500px;
+  height: 100%; /* Set the height to 100% to match the content-section height */
+}
+
+.image-section {
+
+  margin-left: auto; /* Add this property to push the image to the right */
+  margin-right: 40px; /* Add this property to add space between the image and content */
+  display: flex; /* Add this property */
+  align-items: center; /* Add this property */
+  justify-content: center; /* Add this property */
+}
+
+.image-section img {
+  flex: 1;
+  max-width: 100%;
+
+
+
+}
 
   </style>
 </head>
@@ -123,36 +208,43 @@
     </div>
     <div class="detail-container">
     <div class="millions-container">
-      <div>Millions of Songs</div>
-      <div>There are millions of songs on Spotify</div>
+      <img src="images/music-icon.png" alt="music-icon" class="icons">
+      <div class="minititle">Millions of Songs</div>
+      <div class="minip">There are millions of<br> songs on Spotify</div>
     </div>
     <div class="hd-container">
-      <div>HD Music</div>
-      <div>Listen to music as if you were listening live</div>
+      <img src="images/high-quality-icon.png" alt="high-quality-icon" class="icons">
+      <div class="minititle">HD Music</div>
+      <div class="minip">Listen to music as if you were<br> listening live</div>
     </div>
     <div class="stream-container">
-      <div>Stream Everywhere</div>
-      <div>Stream music on your smartphone, tablet or computer</div>
+      <img src="images/devices-icon.png" alt="devices-icon" class="icons">
+      <div class="minititle">Stream Everywhere</div>
+      <div class="minip">Stream music on your <br>smartphone, tablet or<br> computer</div>
     </div>
   </div>
   </div>
   
-
-  <div>
-    <div>It’s as yeezy as Kanye West.</div>
-    <div>
-      <div>Search</div>
-      <div>Know what you want to listen to?<br>Just search and hit play.</div>
+  <div class="third-section">
+    <div class="content-section">
+      <div class="maintitle">It’s as yeezy as Kanye West.</div>
+      <div>
+        <div class="thirdtitle">Search</div>
+        <div class="thirdp">Know what you want to listen to?<br>Just search and hit play.</div>
+      </div>
+      <div>
+        <div class="thirdtitle">Browse</div>
+        <div class="thirdp">Check out the latest charts,<br>brand new releases and great<br>playlists for right now.</div>
+      </div>
+      <div>
+        <div class="thirdtitle">Discover</div>
+        <div class="thirdp">Enjoy new music every Monday<br>with your own personal playlist.<br>Or sit back and enjoy Radio.</div>
+      </div>
     </div>
-    <div>
-      <div>Browse</div>
-      <div>Check out the latest charts,<br>brand new releases and great<br>playlists for right now.</div>
-    </div>
-    <div>
-      <div>Discover</div>
-      <div>Enjoy new music every Monday<br>with your own personal playlist.<br>Or sit back and enjoy Radio.</div>
+    <div class="image-section">
+      <img src="images/spotify-app.jpg" alt="spotify-app">
     </div>
   </div>
 
-</body>
+  </body>
 </html>
